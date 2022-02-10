@@ -1,0 +1,17 @@
+{
+    "name": "dark intranet",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://intra.epitech.eu/*"],
+            "js": ["jquery-3.6.0.min.js", "script.js"],
+            "css": ["style.css"]
+        }
+    ],
+    "icons": { "16": "google_web_search.png",
+        "48": "google_web_search.png",
+        "128": "google_web_search.png"
+    },
+    "permissions": ["activeTab"]
+}
